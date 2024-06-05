@@ -1,0 +1,26 @@
+[default]
+# Fallback values
+user = "default_user"
+
+[test]
+# Environment used when running tests locally or in CI
+user = "test_user"
+
+[dev]
+# Environment for development and local testing
+user = "dev_user"
+
+[stage]
+# Staging Environment
+# Example uses: demos, integration testing. (test or generated data)
+user = "stage_user"
+
+[preprod]
+# Preprod Environment
+# Example uses: verifying a feature, checking hard to reproduce bug (subset of production data)
+user = "preprod_user"
+
+[prod]
+# Prod Environment (production data)
+user = "prod_user"
+

@@ -1,0 +1,17 @@
+[default]
+SERVICE_NAME="SERVICENAME"
+DEBUG= true
+CORS_ORIGIN = ["*"]
+
+[dev]
+DB_HOST = "localhost"
+DB_USER = "flask"
+DB_PASSWORD = "flask"
+DB_NAME = "SERVICENAME-db"
+DB_PORT = 5432
+
+[test]
+
+[stage]
+
+[prod]

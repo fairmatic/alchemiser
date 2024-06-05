@@ -1,0 +1,22 @@
+# Define the version of Docker Compose to use
+version: '3.8'
+
+# Define the services that make up the application
+services:
+  # Define the SERVICENAME service
+  SERVICENAME:
+    # Build the Docker image for the service
+    build:
+      context: ../
+      dockerfile: dockerfiles/Dockerfile
+    # Set the name of the container
+    container_name: SERVICENAME
+    # Set the name of the Docker image
+    image: SERVICENAME
+    # Set the command to run when the container starts
+    command: gunicorn -c gunicorn_cfg.py app:SERVICENAME
+    # Expose the container's port to the host
+    ports:
+      - "5000:5000"
+    # Set the signal to stop the container
+    stop_signal: SIGINT

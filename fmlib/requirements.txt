@@ -1,0 +1,18 @@
+-r ./scheduler/requirements.txt
+-r ./monitoring/requirements.txt
+-r ./config/requirements.txt
+
+# Auth requirements
+-r ./auth/requirements.txt
+# DB requirements
+-r ./db/requirements.txt
+# Sentry requirements
+-r ./sentry/requirements.txt
+# Response requirements
+-r ./response/requirements.txt
+# Logging requirements
+-r ./logging/requirements.txt
+# Storage requirements
+-r ./storage/requirements.txt
+# Fmlogger requirements
+-r ./fmlogger/requirements.txt

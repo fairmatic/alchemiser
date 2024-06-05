@@ -1,0 +1,3 @@
+[submodule "fmlib"]
+	path = fmlib
+	url = git@github.com:fairmatic/fmlib.git
