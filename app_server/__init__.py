@@ -77,7 +77,7 @@ def create_app() -> Flask:
         namespaces.init_namespaces()
 
         # Initialise  Namespaces
-        namespaces.SERVICENAME_API.init_app(app)
+        namespaces.alchemiser_api.init_app(app)
         namespaces.init_namespaces()
 
         # Register exception handlers

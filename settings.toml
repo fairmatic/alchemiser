@@ -1,5 +1,5 @@
 [default]
-SERVICE_NAME="SERVICENAME"
+SERVICE_NAME="alchemiser"
 DEBUG= true
 CORS_ORIGIN = ["*"]
 
@@ -7,8 +7,8 @@ CORS_ORIGIN = ["*"]
 DB_HOST = "localhost"
 DB_USER = "flask"
 DB_PASSWORD = "flask"
-DB_NAME = "SERVICENAME-db"
-DB_PORT = 5432
+DB_NAME = "alchemiserdb"
+DB_PORT = 5435
 
 [test]
 

@@ -28,7 +28,7 @@ def setup_supertokens(app):
     website_domain = app.config.get("WEBSITE_DOMAIN")
     connection_uri = app.config.get("SUPER_TOKENS_CONNECTION_URI")
     api_key = app.config.get("SUPER_TOKENS_API_KEY")
-    init_supertokens(service_name, api_domain, website_domain, connection_uri, api_key)
+    # init_supertokens(service_name, api_domain, website_domain, connection_uri, api_key)
 
 
 def setup_cors(app: Flask, origins: list[str] = None):

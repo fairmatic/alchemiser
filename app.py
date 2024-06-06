@@ -6,15 +6,15 @@ from flask_migrate import Migrate
 from app_server import create_app
 from app_server.db import db
 
-SERVICENAME = create_app()
-migrate = Migrate(SERVICENAME, db)
+alchemiser_service = create_app()
+migrate = Migrate(alchemiser_service, db)
 
 
 def main():
     """Main function to run the application."""
     try:
         logging.info("Starting the application...")
-        SERVICENAME.run(host="::", port=5000)
+        alchemiser_service.run(host="::", port=5155)
     except Exception as e:
         logging.fatal(f"Failed to start the application: {e}")
 

@@ -14,7 +14,7 @@ project_base_path = __file__.rsplit("/", 3)[0]
 configs = None
 
 
-def _init_configs(configFile: str = "settings.toml") -> dict:
+def _init_configs(config_file: str = "settings.toml") -> dict:
     """
     Initializes and returns a dictionary of configuration settings.
 
@@ -26,7 +26,7 @@ def _init_configs(configFile: str = "settings.toml") -> dict:
     """
     global configs
     if configs is None:
-        configs = FMConfig(os.path.join(project_base_path, configFile)).get()
+        configs = FMConfig(os.path.join(project_base_path, config_file)).get()
     return configs
 
 

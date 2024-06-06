@@ -13,10 +13,10 @@ class Api(BaseAPI):
         return ""
 
 
-SERVICENAME_API = Api(
-    title="SERVICENAME API SERVER",
+alchemiser_api = Api(
+    title="Achemiser API SERVER",
     version="1.0",
-    description="REST APIs for SERVICENAME",
+    description="REST APIs for Alchemiser",
 )
 
 
@@ -24,4 +24,4 @@ def init_namespaces():
     # Import and register namespaces here
     from app_server.namespaces.health import health_check_namespace
 
-    SERVICENAME_API.add_namespace(health_check_namespace, path="/health")
+    alchemiser_api.add_namespace(health_check_namespace, path="/health")

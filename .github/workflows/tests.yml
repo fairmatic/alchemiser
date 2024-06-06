@@ -1,4 +1,4 @@
-name: Run tests for SERVICENAME
+name: Run tests for alchemiser_service
 
 on: push
 
@@ -25,6 +25,6 @@ jobs:
         pip install pytest
     - name: Run tests
       run: |
-        COMPOSE_FILE=dockerfiles/SERVICENAME/docker-compose.yaml docker-compose up -d
+        COMPOSE_FILE=dockerfiles/alchemiser_service/docker-compose.yaml docker-compose up -d
         export PYTHONPATH=.
         FM_ENV=test pytest app_server

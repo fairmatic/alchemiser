@@ -1,4 +1,4 @@
-name: Run pre-commit for SERVICENAME
+name: Run pre-commit for alchemiser_service
 
 on: push
 

@@ -2,9 +2,9 @@ version: '2.1'
 services:
   postgres:
     image: postgres:11.6
-    container_name: SERVICENAME-db-test
+    container_name: alchemiser-db-test
     volumes:
-      - SERVICENAME-dbdata-test:/var/lib/postgresql/data
+      - alchemiser-dbdata-test:/var/lib/postgresql/data
     ports:
       - '5435:5432'
     environment:
@@ -13,4 +13,5 @@ services:
       - POSTGRES_SSLMODE=prefer
 
 volumes:
-  SERVICENAME-dbdata-test:
+  alchemiser-dbdata-test:
+
