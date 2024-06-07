@@ -11,7 +11,7 @@ from fmlib.fmlogger import FMLogger
 from fmlib.sentry import setup_sentry
 
 # Create the Flask app instance
-app = Flask("SERVICENAME")
+app = Flask("alchemiser")
 
 
 def register_exception_handlers(app: Flask) -> None:

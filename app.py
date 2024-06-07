@@ -4,10 +4,10 @@ import logging
 from flask_migrate import Migrate
 
 from app_server import create_app
-from app_server.db import db
+from app_server.db import get_db
 
 alchemiser_service = create_app()
-migrate = Migrate(alchemiser_service, db)
+migrate = Migrate(alchemiser_service, get_db())
 
 
 def main():

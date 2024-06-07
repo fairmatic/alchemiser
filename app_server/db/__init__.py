@@ -1,4 +1,5 @@
 import logging
+from typing import Optional
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
@@ -64,3 +65,7 @@ def check_connection() -> bool:
         logging.info("errorYOLO: %s", Exception.args)
         # logging.exception("Unable to connect to database to check connection")
         return False
+
+
+def get_db() -> Optional[SQLAlchemy]:
+    return db
